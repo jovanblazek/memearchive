@@ -1,0 +1,1 @@
+document.getElementById("verzia").innerHTML = "<b> 3.A Memes v0.1 03.05.2018 </b>";
