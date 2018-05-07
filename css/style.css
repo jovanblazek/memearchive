@@ -132,6 +132,94 @@ nav {grid-column: 1/4; padding-top: 5px;}
 
 
 
+
+.index-box
+{
+	overflow: hidden;
+	margin-top: 1em;
+	width: 95%;
+	margin: 1em auto 0 auto;
+
+	border: 2px #333 solid;
+}
+
+.index-box>a
+{
+	text-decoration: none;
+}
+
+.index-box-img1, .index-box-img2, .index-box-img3, .index-box-img4
+{
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: scroll;
+	background-position: center;
+	width: 100%;
+	height: 300px;
+
+	overflow: hidden;
+	transition: .3s ease-out;
+}
+.index-box-img1
+{
+	background-image:
+	-webkit-linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),url("../images/og.png");
+	background-image:
+	-o-linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),url("../images/og.png");
+	background-image:
+	linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),url("../images/og.png");
+}
+.index-box-img2
+{
+	background-image:
+	-webkit-linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),url("../images/og.png");
+	background-image:
+	-o-linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),url("../images/og.png");
+	background-image:
+	linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),url("../images/og.png");
+}
+.index-box-img3
+{
+	background-image:
+	-webkit-linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),url("../images/index3.jpg");
+	background-image:
+	-o-linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),url("../images/index3.jpg");
+	background-image:
+	linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),url("../images/index3.jpg");
+}
+.index-box-img4
+{
+	background-image:
+	-webkit-linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),url("../images/og.png");
+	background-image:
+	-o-linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),url("../images/og.png");
+	background-image:
+	linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),url("../images/og.png");
+}
+
+.index-box-text
+{
+	text-align: center;
+	color: white;
+	font-weight: 700;
+	font-size: 30px;
+	text-shadow: 1px 1px 20px black;
+	
+	position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.index-box-img1:hover, .index-box-img2:hover, .index-box-img3:hover, .index-box-img4:hover
+{
+	transform: scale(1.15);
+	transition: .3s ease-in;
+}
+
+
+
+
 .box-img
 {
 	margin-top: 1em;
