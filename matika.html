@@ -7,9 +7,9 @@
 	<meta name="description" content="Tie najlepšie obrázky a citáty tretej, možno už štvrtej A zo SPŠEKE!">
 	<meta name="keywords" content="3a memes, 3.A SPŠEKE, 3.A memes, 3.A citáty">
 
-	<meta property="og:url" content="https://jovanblazek.github.io/3Amemes/obrazky.html">
+	<meta property="og:url" content="https://jovanblazek.github.io/3Amemes/memes.html">
 	<meta property="og:type" content="website">
-	<meta property="og:title" content="Obrázky - 3.A Memes">
+	<meta property="og:title" content="Memes - 3.A Memes">
 	<meta property="og:description" content="Best of 3.A">
 	<meta property="og:image" content="https://jovanblazek.github.io/3Amemes/images/og.png">
 
@@ -27,7 +27,7 @@
 
 	<header id="hlavicka">
 		<a href="index.html"><img src="images/logoSkola3A.png" alt="logo skoly" id="logo"></a>
-		<div id="headerText">Obrázky</div>
+		<div id="headerText">Matika</div>
 		<i class="fas fa-bars" id="menuIcon"></i>
 		<nav>
 			<div id="menu">		
@@ -42,35 +42,32 @@
 		</nav>
 	</header>
 
-
 	<content>
-		<h3 class="content-nadpis">Kategórie</h3>
-			<a href="memes.html" class="kategoria-link">
-				<div class="kategoria">
-					<span class="kategoria-info">Memes</span>
-				</div>
-			</a>
-			<a href="momentky.html" class="kategoria-link">
-				<div class="kategoria">
-					<span class="kategoria-info">Momentky</span>
-				</div>
-			</a>
-			<a href="nemcina.html" class="kategoria-link">
-				<div class="kategoria">
-					<span class="kategoria-info">Nemčina</span>
-				</div>
-			</a>
-			<a href="matika.html" class="kategoria-link">
-				<div class="kategoria">
-					<span class="kategoria-info">Matika</span>
-				</div>
-			</a>
-			<a href="other.html" class="kategoria-link">
-				<div class="kategoria">
-					<span class="kategoria-info">Other</span>
-				</div>
-			</a>
+		<h3 class="content-nadpis">Naša matematika</h3>
+
+		<div class="box"><img src="images/memes/matika/jozko_beback.jpg" alt="jozko_beback"></div>
+		<div class="box"><img src="images/memes/matika/who_win.jpg" alt="who_win"></div>
+		<div class="box"><img src="images/memes/matika/bob_ross1.jpg" alt="bob_ross1"></div>
+		<div class="box"><img src="images/memes/matika/bob_ross2.jpg" alt="bob_ross2"></div>
+		<div class="box"><img src="images/memes/matika/disappear.jpg" alt="disappear"></div>
+		<div class="box"><img src="images/memes/matika/stvorsten.jpg" alt="stvorsten"></div>
+		<div class="box"><img src="images/memes/matika/vrati_sa.jpg" alt="vrati_sa"></div>
+		<div class="box"><img src="images/memes/matika/fine.jpg" alt="fine"></div>
+		<div class="box"><img src="images/memes/matika/gf.jpg" alt="gf"></div>
+		<div class="box"><img src="images/memes/matika/ruky.jpg" alt="ruky"></div>
+		<div class="box"><img src="images/memes/matika/pisomka.jpg" alt="pisomka"></div>
+		<div class="box"><img src="images/memes/matika/truth.jpg" alt="truth"></div>
+		<div class="box"><img src="images/memes/matika/upgrade.jpg" alt="upgrade"></div>
+		<div class="box"><img src="images/memes/matika/hodiny_sjozkom.jpg" alt="hodiny_sjozkom"></div>
+		<div class="box"><img src="images/memes/matika/batman.jpg" alt="batman"></div>
+		<div class="box"><img src="images/memes/matika/tetiva.jpg" alt="tetiva"></div>
+		<div class="box"><img src="images/memes/matika/priemer.jpg" alt="priemer"></div>
+		<div class="box"><img src="images/memes/matika/priemer2.jpg" alt="priemer2"></div>
+			
 	</content>
+	
+	<a href="javascript:" id="return-to-top"><i class="fas fa-angle-up"></i></a>
+
 	<footer>
 		<div class="footer-box">
 			<h3 class="footer-nadpis">Info</h3>
@@ -93,7 +90,21 @@
 
 
 
-
+<script type="text/javascript">
+	// ===== Scroll to Top ==== 
+	$(window).scroll(function() {
+	    if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
+	        $('#return-to-top').fadeIn(200);    // Fade in the arrow
+	    } else {
+	        $('#return-to-top').fadeOut(200);   // Else fade out the arrow
+	    }
+	});
+	$('#return-to-top').click(function() {      // When arrow is clicked
+	    $('body,html').animate({
+	        scrollTop : 0                       // Scroll to top of body
+	    }, 500);
+	});
+</script>
 
 <script src="javascript/menu.js"></script>
 <script src="javascript/verzia.js"></script>
