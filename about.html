@@ -7,15 +7,14 @@
 	<meta name="description" content="Tie najlepšie obrázky a citáty tretej, možno už štvrtej A zo SPŠEKE!">
 	<meta name="keywords" content="3a memes, 3.A SPŠEKE, 3.A memes, 3.A citáty">
 
-	<meta property="og:url" content="https://jovanblazek.github.io/3Amemes/memes.html">
+	<meta property="og:url" content="https://jovanblazek.github.io/3Amemes/obrazky.html">
 	<meta property="og:type" content="website">
-	<meta property="og:title" content="Memes - 3.A Memes">
+	<meta property="og:title" content="Obrázky - 3.A Memes">
 	<meta property="og:description" content="Best of 3.A">
 	<meta property="og:image" content="https://jovanblazek.github.io/3Amemes/images/og.png">
 
 
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Kavivanar" rel="stylesheet">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
 
 	<link rel="stylesheet" type="text/css" href="css/style.css">
@@ -28,7 +27,7 @@
 
 	<header id="hlavicka">
 		<a href="index.html"><img src="images/logoSkola3A.png" alt="logo skoly" id="logo"></a>
-		<div id="headerText">Citáty</div>
+		<div id="headerText">Memes</div>
 		<i class="fas fa-bars" id="menuIcon"></i>
 		<nav>
 			<div id="menu">		
@@ -43,30 +42,27 @@
 		</nav>
 	</header>
 
+
 	<content>
+		<h3 class="content-nadpis">About</h3>
+		<div class="about-box">
+			<p>
+				3.A Memes je voľnočasový projekt, ktorého cieľom je zozbierať všetky naše vtipné obrázky, videá a hlášky na jedno miesto. Už žiadne dlhé listovanie v skupine.<br>
+				<img src="images/og.png" alt="obr">
+				Budem sa snažiť update-ovať obsah tak často ako to bude možné.<br>
+				Nápad na tento projekt vznikol, tak ako každý iný, na veľkej bielej porcelánovej nádobe v malej miestonosti.<br>
+				Ak sa Vám podarilo nájsť nejaký bug alebo máte nápad ako niečo zlepšiť, pošlite mi feedback pomocou tlačidla dole.<br>
 
-		<h3 class="content-nadpis">Naše najlepšie hlášky</h3>
-		
-		<div class="citat-box">
-			<p class="citat">
-				&bdquo;toto je citat&ldquo;
+				<h3 class="about-podnadpis">Máš nejaké video/obrázok/citát, ktorý nie je na stránke?
+				</h3>
+				<input type="button" value="Pošli mi ho!" onclick="sendEmail()">
 			</p>
-			<p class="citat-autor">-Admin, 20.05.2018</p>
+			<p style="text-align: left;">
+				Ak ti nefunguje button hore - tomas.blazek@student.spseke.sk
+			</p>
 		</div>
 
-		<div class="citat-box">
-			<p class="citat">
-				&bdquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua.&ldquo;
-			</p>
-			<p class="citat-autor">-Admin, 20.05.2018</p>
-		</div>
-
-				
 	</content>
-	
-	<a href="javascript:" id="return-to-top"><i class="fas fa-angle-up"></i></a>
-
 	<footer>
 		<div class="footer-box">
 			<h3 class="footer-nadpis">Info</h3>
@@ -84,22 +80,13 @@
 
 
 
-
-<script type="text/javascript">
-	// ===== Scroll to Top ==== 
-	$(window).scroll(function() {
-	    if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
-	        $('#return-to-top').fadeIn(200);    // Fade in the arrow
-	    } else {
-	        $('#return-to-top').fadeOut(200);   // Else fade out the arrow
-	    }
-	});
-	$('#return-to-top').click(function() {      // When arrow is clicked
-	    $('body,html').animate({
-	        scrollTop : 0                       // Scroll to top of body
-	    }, 500);
-	});
+<script>
+	function sendEmail() 
+	{
+		window.open('mailto:tomas.blazek@student.spseke.sk?subject=3AMemes%20Feedback&body=BUG/OBRÁZOK/VIDEO/CITÁT');
+	}
 </script>
+
 
 <script src="javascript/menu.js"></script>
 <script src="javascript/verzia.js"></script>

@@ -17,7 +17,7 @@ body
 
 header
 {
-	background-color: #333;
+	background-color: #264173;
 	padding: 10px 0 10px 0;
 	height: 100px;
 	width: 100%;
@@ -95,7 +95,7 @@ nav {grid-column: 1/4; padding-top: 5px;}
 
 #menu>ul
 {
-	background-color: rgba(33,33,33,0.95);
+	background-color: rgba(26,41,73,0.95); /*rgba(33,33,33,0.95)*/
 	padding: 0;
 	margin: 0;
 	max-height: 0;
@@ -191,11 +191,11 @@ nav {grid-column: 1/4; padding-top: 5px;}
 .index-box-img4
 {
 	background-image:
-	-webkit-linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),url("../images/og.png");
+	-webkit-linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),url("../images/index4.jpg");
 	background-image:
-	-o-linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),url("../images/og.png");
+	-o-linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),url("../images/index4.jpg");
 	background-image:
-	linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),url("../images/og.png");
+	linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),url("../images/index4.jpg");
 }
 
 .index-box-text
@@ -223,7 +223,7 @@ nav {grid-column: 1/4; padding-top: 5px;}
 
 .box
 {
-	margin-top: 1em;
+	margin: 1em 0 2.5em 0;
 }
 
 .box>h3
@@ -238,6 +238,8 @@ nav {grid-column: 1/4; padding-top: 5px;}
 	margin: 0 auto;
 	width: 90%;
 	height: auto;
+
+	box-shadow: 0 0 16px;
 }
 
 
@@ -277,6 +279,17 @@ footer
 
 .footer-box>p {margin: 1em 0 1em 0;}
 
+.footer-text>a, .footer-text>a:hover, .footer-text>a:visited
+{
+	text-transform: uppercase;
+	color: #8E8E8E;
+	font-size: 10px;
+	font-weight: 700;
+	letter-spacing: 2px;
+	padding-left: 0.5em;
+	text-decoration: none;
+}
+
 .footer-box>ul>li>.fas,.far{ margin-right: 10px; color: white}
 
 #verzia-link
@@ -294,7 +307,8 @@ footer
 	text-align: center;
 	text-transform: uppercase;
 	letter-spacing: 1px;
-	margin: 1em;
+	font-size: 36px;
+	margin: 1em 0 0.6em 0;
 }
 
 .kategoria-link
@@ -303,9 +317,9 @@ footer
 	text-decoration: none;
 }
 
-.kategoria:hover
+.kategoria:hover, input:hover
 {
-	background-color: #333;
+	background-color: #264173;
 	color: #f5f5f5;
 }
 
@@ -349,6 +363,37 @@ video
 	font-family: 'Kavivanar', cursive;
 	text-align: right;
 	margin: 3px 0 0 0;
+}
+
+/*about*/
+.about-box
+{
+	margin: 1em;
+	text-align: justify;
+}
+
+.about-box>p>img
+{
+	width: 100%;
+	height: auto;
+	margin: 1em 0 1em 0;
+}
+
+.about-podnadpis
+{
+	text-transform: uppercase;
+	font-size: 22px;
+	text-align: center;
+	color: #264173;
+}
+
+input
+{
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	border: 1px solid #ccc;
+	border-radius: 4px;
 }
 
 
