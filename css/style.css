@@ -164,11 +164,11 @@ nav {grid-column: 1/4; padding-top: 5px;}
 .index-box-img1
 {
 	background-image:
-	-webkit-linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),url("../images/og.png");
+	-webkit-linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),url("../images/memes/nemcina/spolocna.jpg");
 	background-image:
-	-o-linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),url("../images/og.png");
+	-o-linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),url("../images/memes/nemcina/spolocna.jpg");
 	background-image:
-	linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),url("../images/og.png");
+	linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),url("../images/memes/nemcina/spolocna.jpg");
 }
 .index-box-img2
 {
@@ -221,18 +221,18 @@ nav {grid-column: 1/4; padding-top: 5px;}
 
 
 
-.box-img
+.box
 {
 	margin-top: 1em;
 }
 
-.box-img>h3
+.box>h3
 {
 	font-size: 20px;
 	padding-left: 5%;
 }
 
-.box-img>img
+.box>img
 {
 	display: block;
 	margin: 0 auto;
@@ -311,7 +311,7 @@ footer
 
 .kategoria
 {
-	background-color: #f5f5f5;
+	background-color: #e6e6e6;
 	padding: 1em;
 	font-size: 14px;
 	text-align: center;
@@ -319,7 +319,37 @@ footer
 	border-radius: 5px;
 }
 
+/*VIDEA*/
 
+video
+{
+	width: 90%;
+	height: auto;
+	margin: 0 5%;
+}
+
+/*CITATY*/
+.citat-box
+{
+	margin: 1em;
+}
+
+
+.citat
+{
+	font-family: 'Kavivanar', cursive;
+	font-size: 28px;
+	color: #4100ff;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.citat-autor
+{
+	font-family: 'Kavivanar', cursive;
+	text-align: right;
+	margin: 3px 0 0 0;
+}
 
 
 /*BTT BUTTON*/
@@ -356,11 +386,12 @@ footer
     -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
 }
+/* LEN NA PC VERZII
 #return-to-top:hover {
     background: rgba(0, 0, 0, 0.9);
 }
 #return-to-top:hover i {
     color: #fff;
     top: 5px;
-}
+}*/
 /*=========*/
