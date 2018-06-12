@@ -1,9 +1,7 @@
-/*
 *
 {
-	margin: 0;	
-	padding: 0;	
-}*/
+	box-sizing: border-box;
+}
 
 html
 {
@@ -17,6 +15,7 @@ body
 
 header
 {
+	box-sizing: content-box;
 	background-color: #264173;
 	padding: 10px 0 10px 0;
 	height: 100px;
@@ -62,7 +61,7 @@ header
 	padding-left: 10px;
 	align-self: center;
 	height: 100px;
-	width: 100px;
+	/*width: 100px;*/
 
 	-webkit-transition: height .5s, width .5s; /* Safari */
 	transition: height .5s, width .5s;
@@ -236,7 +235,7 @@ nav {grid-column: 1/4; padding-top: 5px;}
 {
 	display: block;
 	margin: 0 auto;
-	width: 90%;
+	/*width: 90%;*/
 	height: auto;
 
 	box-shadow: 0 0 16px;
@@ -351,8 +350,9 @@ video
 
 .citat
 {
-	font-family: 'Kavivanar', cursive;
+	font-family: 'Amatic SC', cursive;
 	font-size: 28px;
+	font-weight: 700;
 	color: #264173;
 	margin: 0 auto;
 	text-align: center;
@@ -360,7 +360,8 @@ video
 
 .citat-autor
 {
-	font-family: 'Kavivanar', cursive;
+	font-family: 'Amatic SC', cursive;
+	font-weight: 700;
 	text-align: right;
 	margin: 3px 0 0 0;
 }
@@ -437,6 +438,7 @@ input
     -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
 }
+
 /* LEN NA PC VERZII
 #return-to-top:hover {
     background: rgba(0, 0, 0, 0.9);
@@ -446,3 +448,192 @@ input
     top: 5px;
 }*/
 /*=========*/
+
+@media screen and (min-width: 768px)
+{
+	body
+	{
+		margin: 160px 0 0 0;
+	}
+	
+	header
+	{
+		grid-template-columns: 120px 150px 1fr;
+	}
+
+	nav
+	{
+		grid-column: 3/4;
+		padding-top: 0;
+		align-self: center;
+		text-align: right;
+		margin-right: 2.5%;
+	}
+
+	.scrolled-nav 
+	{
+		grid-template-columns: 80px 150px 1fr;
+	}
+
+
+	#menuIcon{display: none;}
+
+	#menu>ul
+	{
+		background: none;
+		max-height: none;
+		width: auto;
+	}
+
+	#menu>ul>li
+	{
+		display: inline-block;
+		padding: 0 1em;
+		width: auto;
+	}
+
+	#menu>ul>li>a
+	{
+		padding: 0px;
+		border: none;
+		display: inline-block;
+		text-decoration: none;
+		font-size: 26px;
+	}
+	/*===============*/
+
+	#index-main
+	{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-gap: 6px;
+		margin: 0 2.5%;
+	}
+
+	.index-box
+	{
+		margin: 0;
+		width: auto;
+	}
+
+	.index-box-img1, .index-box-img2, .index-box-img3, .index-box-img4
+	{
+		height: 400px;
+	}
+
+	/*=========*/
+	/*Memes - GENERAL FLEXBOX*/
+
+	.flex-row 
+	{
+		display: -ms-flexbox; /* IE10 */
+		display: flex;
+		-ms-flex-wrap: wrap; /* IE10 */
+		flex-wrap: wrap;
+		padding: 0 4px;
+	}
+
+	.flex-column 
+	{
+		-ms-flex: 33%; /* IE10 */
+		flex: 33%;
+		max-width: 33%;
+		padding: 0 4px;
+	}
+
+	.flex-column .box 
+	{
+		margin-top: 8px;
+		vertical-align: middle;
+	}
+
+	.box>img
+	{
+		width: 90%;
+	}
+
+	/*=========*/
+	/*VIDEA*/
+
+	.flex-row-vid
+	{
+		display: -ms-flexbox; /* IE10 */
+		display: flex;
+		-ms-flex-wrap: wrap; /* IE10 */
+		flex-wrap: wrap;
+		padding: 0 4px;
+	}
+
+	.flex-column-vid 
+	{
+		-ms-flex: 50%; /* IE10 */
+		flex: 50%;
+		max-width: 50%;
+		padding: 0 4px;
+	}
+
+	.flex-column-vid .box 
+	{
+		margin-top: 8px;
+		vertical-align: middle;
+	}
+
+	/*=========*/
+	/*ABOUT*/
+	#about-main
+	{
+		margin: 0 13%;
+		font-size: 18px;
+	}
+	.about-podnadpis
+	{
+		font-size: 28px;
+	}
+	/*=========*/
+	/*CITATY*/
+	
+	#citaty-main
+	{
+		margin: 0 13%;
+	}	
+
+	.citat
+	{
+		font-size: 38px;
+	}
+
+	.citat-autor
+	{
+		font-size: 28px;
+	}
+
+	.citat-group
+	{
+		margin: 1em 0 1em 0;
+		padding: 0.5em 0 0.5em 0;
+		box-shadow: 0 0 16px;
+	}
+
+
+
+	/*==========*/
+	/*BACK TO TOP HOVER*/
+	#return-to-top:hover 
+	{
+		background: rgba(0, 0, 0, 0.9);
+	}
+	#return-to-top:hover i 
+	{
+		color: #fff;
+		top: 5px;
+	}
+
+}
+
+@media screen and (max-width: 767px) 
+{
+	.box>img
+	{
+		width: 90%;
+	}
+}
