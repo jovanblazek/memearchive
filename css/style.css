@@ -148,7 +148,8 @@ nav {grid-column: 1/4; padding-top: 5px;}
 	text-decoration: none;
 }
 
-.index-box-img1, .index-box-img2, .index-box-img3, .index-box-img4
+.index-box-img1, .index-box-img2, .index-box-img3, .index-box-img4, .obrazky-box-img1, 
+.obrazky-box-img2, .obrazky-box-img3, .obrazky-box-img4, .obrazky-box-img5
 {
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -197,6 +198,52 @@ nav {grid-column: 1/4; padding-top: 5px;}
 	linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),url("../images/index4.jpg");
 }
 
+.obrazky-box-img1
+{
+	background-image:
+	-webkit-linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),url("../images/memes/gelnica.jpg");
+	background-image:
+	-o-linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),url("../images/memes/gelnica.jpg");
+	background-image:
+	linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),url("../images/memes/gelnica.jpg");
+}
+.obrazky-box-img2
+{
+	background-image:
+	-webkit-linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),url("../images/memes/momentky/edo_wat2.jpg");
+	background-image:
+	-o-linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),url("../images/memes/momentky/edo_wat2.jpg");
+	background-image:
+	linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),url("../images/memes/momentky/edo_wat2.jpg");
+}
+.obrazky-box-img3
+{
+	background-image:
+	-webkit-linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),url("../images/memes/nemcina/antworte.jpg");
+	background-image:
+	-o-linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),url("../images/memes/nemcina/antworte.jpg");
+	background-image:
+	linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),url("../images/memes/nemcina/antworte.jpg");
+}
+.obrazky-box-img4
+{
+	background-image:
+	-webkit-linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),url("../images/memes/matika/gf.jpg");
+	background-image:
+	-o-linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),url("../images/memes/matika/gf.jpg");
+	background-image:
+	linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),url("../images/memes/matika/gf.jpg");
+}
+.obrazky-box-img5
+{
+	background-image:
+	-webkit-linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),url("../images/memes/other/telesna.jpg");
+	background-image:
+	-o-linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),url("../images/memes/other/telesna.jpg");
+	background-image:
+	linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),url("../images/memes/other/telesna.jpg");
+}
+
 .index-box-text
 {
 	text-align: center;
@@ -211,7 +258,8 @@ nav {grid-column: 1/4; padding-top: 5px;}
     transform: translate(-50%, -50%);
 }
 
-.index-box-img1:hover, .index-box-img2:hover, .index-box-img3:hover, .index-box-img4:hover
+.index-box-img1:hover, .index-box-img2:hover, .index-box-img3:hover, .index-box-img4:hover,
+.obrazky-box-img1:hover, .obrazky-box-img2:hover, .obrazky-box-img3:hover, .obrazky-box-img4:hover, .obrazky-box-img5:hover
 {
 	transform: scale(1.15);
 	transition: .3s ease-in;
@@ -301,6 +349,9 @@ footer
 
 
 /*===========OBRAZKY==========*/
+.mobile{display: block;}
+.desktop{display: none;}
+
 .content-nadpis
 {
 	text-align: center;
@@ -494,7 +545,7 @@ input
 
 	#menu>ul>li>a
 	{
-		padding: 0px;
+		padding: 5px 0px;
 		border: none;
 		display: inline-block;
 		text-decoration: none;
@@ -516,7 +567,8 @@ input
 		width: auto;
 	}
 
-	.index-box-img1, .index-box-img2, .index-box-img3, .index-box-img4
+	.index-box-img1, .index-box-img2, .index-box-img3, .index-box-img4,
+	.obrazky-box-img1, .obrazky-box-img2, .obrazky-box-img3, .obrazky-box-img4, .obrazky-box-img5
 	{
 		height: 400px;
 	}
@@ -614,6 +666,22 @@ input
 		box-shadow: 0 0 16px;
 	}
 
+	/*OBRAZKY-KATEGORIE*/
+	.mobile{display: none;}
+	.desktop{display: block;}
+
+	#obrazky-desktop
+	{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-gap: 6px;
+		margin: 0 2.5%;
+	}
+
+	.wide-grid{grid-column: 1/3;} 	/*karta other*/
+
+
+
 
 
 	/*==========*/
@@ -626,6 +694,40 @@ input
 	{
 		color: #fff;
 		top: 5px;
+	}
+
+	/*==============*/
+	/* Underline Menu Efekt */
+	.hvr-underline-reveal {
+		display: inline-block;
+		vertical-align: middle;
+		-webkit-transform: perspective(1px) translateZ(0);
+		transform: perspective(1px) translateZ(0);
+		box-shadow: 0 0 1px transparent;
+		position: relative;
+		overflow: hidden;
+	}
+	.hvr-underline-reveal:before {
+		content: "";
+		position: absolute;
+		z-index: -1;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background: #FFF;
+		height: 2px;
+		-webkit-transform: translateY(2px);
+		transform: translateY(2px);
+		-webkit-transition-property: transform;
+		transition-property: transform;
+		-webkit-transition-duration: 0.3s;
+		transition-duration: 0.3s;
+		-webkit-transition-timing-function: ease-out;
+		transition-timing-function: ease-out;
+	}
+	.hvr-underline-reveal:hover:before, .hvr-underline-reveal:focus:before, .hvr-underline-reveal:active:before {
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
 	}
 
 }
