@@ -358,7 +358,7 @@ footer
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	font-size: 36px;
-	margin: 1em 0 0.6em 0;
+	margin: 1em 0 0.8em 0;
 }
 
 .kategoria-link
@@ -393,9 +393,16 @@ video
 }
 
 /*CITATY*/
-.citat-box
+.citat-box, .dialog-box
 {
-	margin: 1em;
+	margin: 1.1em;
+}
+
+.citat-group
+{
+    margin: 1em;
+    padding: 0.2em 0 0.2em 0;
+    box-shadow: 0 0 4px;
 }
 
 
@@ -414,8 +421,86 @@ video
 	font-family: 'Amatic SC', cursive;
 	font-weight: 700;
 	text-align: right;
-	margin: 3px 0 0 0;
+	margin: 6px 0 0 0;
 }
+
+
+
+/*Dialogy*/
+    
+.dialog-box
+{
+    /*width: 50%; /*iba pc*/
+    box-shadow: 0 0 4px;
+    padding: 1em;
+    overflow: auto;
+}
+
+.dialog-nadpis
+{
+    margin-top: 0;
+}
+
+.dialog-text
+{
+   /* border: 1px solid black*/
+}
+
+.dialog-blue-name
+{
+    clear: both;
+    
+    color: gray;
+    font-size: 14px;
+    padding-right: 19px;
+    
+    text-align: right;
+}
+
+.dialog-blue
+{
+    clear: both;
+    margin-top: 2px;
+    margin-right: 10px;
+    padding: 0.5em;
+    
+    background: #0084FF;
+    color: white;
+    
+    border: 1px solid #0084FF;
+    border-radius: 10px;
+    max-width: 80%;
+    
+    display: inline-block;
+    float: right;
+}
+
+.dialog-gray-name
+{
+    clear: both;
+    color: gray;
+    font-size: 14px;
+    padding-left: 19px;
+}
+
+.dialog-gray
+{
+    clear: both;
+    margin-top: 2px;
+    margin-left: 10px;
+    padding: 0.5em;
+    background: #efefef;
+    color: black;
+    border: 1px solid #efefef;
+    border-radius: 10px;
+    max-width: 80%;
+    
+    display: inline-block;
+}
+
+
+
+
 
 /*about*/
 .about-box
@@ -549,7 +634,7 @@ input
 		border: none;
 		display: inline-block;
 		text-decoration: none;
-		font-size: 26px;
+		font-size: 24px;
 	}
 	/*===============*/
 
@@ -587,9 +672,9 @@ input
 
 	.flex-column 
 	{
-		-ms-flex: 33%; /* IE10 */
-		flex: 33%;
-		max-width: 33%;
+		-ms-flex: 25%; /* IE10 */
+		flex: 25%;
+		max-width: 25%;
 		padding: 0 4px;
 	}
 
@@ -618,9 +703,9 @@ input
 
 	.flex-column-vid 
 	{
-		-ms-flex: 50%; /* IE10 */
-		flex: 50%;
-		max-width: 50%;
+		-ms-flex: 33%; /* IE10 */
+		flex: 33%;
+		max-width: 33%;
 		padding: 0 4px;
 	}
 
@@ -651,20 +736,48 @@ input
 
 	.citat
 	{
-		font-size: 38px;
+		font-size: 44px;
 	}
 
 	.citat-autor
 	{
-		font-size: 28px;
+		font-size: 32px;
 	}
 
 	.citat-group
 	{
 		margin: 1em 0 1em 0;
-		padding: 0.5em 0 0.5em 0;
-		box-shadow: 0 0 16px;
+		padding: 0.6em 0 0.6em 0;
+		box-shadow: 0 0 4px;
 	}
+    
+    /*dialogy*/
+    
+    .dialog-row
+	{
+		display: -ms-flexbox; /* IE10 */
+		display: flex;
+		-ms-flex-wrap: wrap; /* IE10 */
+		flex-wrap: wrap;
+	}
+
+	.dialog-column
+	{
+		-ms-flex: 50%; /* IE10 */
+		flex: 50%;
+		max-width: 50%;
+	}
+
+	/*.flex-column-vid .box 
+	{
+		margin-top: 8px;
+		vertical-align: middle;
+	}*/
+    
+    
+    
+    
+    
 
 	/*OBRAZKY-KATEGORIE*/
 	.mobile{display: none;}
@@ -680,7 +793,7 @@ input
 
 	.wide-grid{grid-column: 1/3;} 	/*karta other*/
 
-
+    /*========================================================*/
 
 
 
