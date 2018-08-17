@@ -1,2 +1,2 @@
-document.getElementById("verzia").innerHTML = "3.A Memes v0.5 03.07.2018";
-document.getElementById("cas").innerHTML = "Od začiatia projektu uplynulo: ~29hod";
+document.getElementById("verzia").innerHTML = "4.A Memes v0.6 17.08.2018";
+document.getElementById("cas").innerHTML = "Od začiatia projektu uplynulo: ~31hod";
