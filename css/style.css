@@ -585,7 +585,7 @@ input
 }*/
 /*=========*/
 
-@media screen and (min-width: 768px) and (max-width: 1023px)
+@media screen and (min-width: 600px) and (max-width: 1023px)       /*TABLET*/
 {
 	/*Memes - TABLET FLEXBOX*/
 
@@ -644,7 +644,7 @@ input
 	}
 }
 
-@media screen and (min-width: 1024px)
+@media screen and (min-width: 1024px)            /*PC*/
 {
 	body
 	{
