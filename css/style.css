@@ -148,7 +148,7 @@ nav {grid-column: 1/4; padding-top: 5px;}
 	text-decoration: none;
 }
 
-.index-box-img1, .index-box-img2, .index-box-img3, .index-box-img4, .obrazky-box-img1, 
+.index-box-img0, .index-box-img1, .index-box-img2, .index-box-img3, .index-box-img4, .obrazky-box-img1, 
 .obrazky-box-img2, .obrazky-box-img3, .obrazky-box-img4, .obrazky-box-img5
 {
 	background-repeat: no-repeat;
@@ -160,6 +160,15 @@ nav {grid-column: 1/4; padding-top: 5px;}
 
 	overflow: hidden;
 	transition: .3s ease-out;
+}
+.index-box-img0
+{
+	background-image:
+	-webkit-linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),url("../images/index0.jpg");
+	background-image:
+	-o-linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),url("../images/index0.jpg");
+	background-image:
+	linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),url("../images/index0.jpg");
 }
 .index-box-img1
 {
@@ -258,7 +267,7 @@ nav {grid-column: 1/4; padding-top: 5px;}
     transform: translate(-50%, -50%);
 }
 
-.index-box-img1:hover, .index-box-img2:hover, .index-box-img3:hover, .index-box-img4:hover,
+.index-box-img0:hover,.index-box-img1:hover, .index-box-img2:hover, .index-box-img3:hover, .index-box-img4:hover,
 .obrazky-box-img1:hover, .obrazky-box-img2:hover, .obrazky-box-img3:hover, .obrazky-box-img4:hover, .obrazky-box-img5:hover
 {
 	transform: scale(1.15);
@@ -539,6 +548,19 @@ input
 	color: inherit;
 }
 
+/*==========NOVINKY============*/
+.novinky-podnadpis
+{
+    font-size: 22px;
+    text-align: center;
+    margin: 0.5em 0 0.5em 0;
+}
+
+.ciara
+{
+    margin: 0 3%;
+}
+
 
 /*BTT BUTTON*/
 #return-to-top {
@@ -642,6 +664,12 @@ input
 		margin-top: 8px;
 		vertical-align: middle;
 	}
+    
+    /*NOVINKY*/
+    .novinky-podnadpis
+    {
+        font-size: 26px;
+    }
 }
 
 @media screen and (min-width: 1024px)            /*PC*/
@@ -711,7 +739,7 @@ input
 		width: auto;
 	}
 
-	.index-box-img1, .index-box-img2, .index-box-img3, .index-box-img4,
+	.index-box-img0,.index-box-img1, .index-box-img2, .index-box-img3, .index-box-img4,
 	.obrazky-box-img1, .obrazky-box-img2, .obrazky-box-img3, .obrazky-box-img4, .obrazky-box-img5
 	{
 		height: 400px;
@@ -853,8 +881,17 @@ input
 	.wide-grid{grid-column: 1/3;} 	/*karta other*/
 
     /*========================================================*/
-
-
+    
+    /*NOVINKY*/
+    .novinky-podnadpis
+    {
+        font-size: 26px;
+    }
+    .ciara
+    {
+        margin: 0 1.6%;
+    }
+    
 
 	/*==========*/
 	/*BACK TO TOP HOVER*/
