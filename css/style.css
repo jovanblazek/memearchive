@@ -602,7 +602,7 @@ input
 
 .blok-btn:after
 {
-    font-family: FontAwesome;
+    font-family: "Font Awesome 5 Free";
     content: '\f0d7';
     color: #264173;
     font-weight: 900;
