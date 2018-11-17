@@ -402,6 +402,16 @@ video
 }
 
 /*CITATY*/
+
+.citaty-content-nadpis
+{
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-size: 36px;
+	margin: 0.5em 0 0.8em 0;
+}
+
 .citat-box, .dialog-box
 {
 	margin: 1.1em;
@@ -549,6 +559,7 @@ input
 }
 
 /*==========NOVINKY============*/
+
 .novinky-podnadpis
 {
     font-size: 22px;
@@ -558,7 +569,72 @@ input
 
 .ciara
 {
-    margin: 0 3%;
+    margin: 0 1.2em;
+}
+
+/*==========BLOCK VIEW============*/
+
+.blok-div-btn
+{
+    margin: 1.2em;
+}
+
+.blok-div-btn-citaty
+{
+    margin: 1em;
+}
+
+.blok-btn
+{
+    font-size: 27px;
+    text-align: center;
+    font-weight: 700;
+    font-family: inherit;
+    
+    background-color: #efefef;            /*default, rovnaka ako konverzacie gray */
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+}
+
+.blok-btn:after
+{
+    font-family: FontAwesome;
+    content: '\f0d7';
+    color: #264173;
+    font-weight: 900;
+    float: right;
+    margin-left: 5px;
+    margin-top: 5px;
+    
+    display: inline-block;
+    transition: 0.4s;
+}
+
+.active, .blok-btn:hover
+{
+    background-color: #dadada;
+}
+
+.active:after 
+{
+    font-family: FontAwesome;
+    font-weight: 900;
+    content: "\f0d7";
+    
+    display: inline-block;
+    transform: rotate(180deg);
+    transition: 0.4s;
+}
+
+.blok-panel
+{
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out;
 }
 
 
@@ -833,7 +909,7 @@ input
 
 	.citat-group
 	{
-		margin: 1em 0 1em 0;
+		/*margin: 1em 0 1em 0;           update 1.2, bug z tienom na bokoch citat-group */
 		padding: 0.6em 0 0.6em 0;
 		box-shadow: 0 0 4px;
 	}

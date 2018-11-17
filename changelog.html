@@ -31,6 +31,26 @@
 		h1 {font-size: 60px; margin: 0 auto; margin-bottom: 0.5em; text-align: center;}
 		h2 {text-decoration: underline;}
 		main>div{margin: 0 3%;}
+        .rainbow
+        {
+		    animation: rainbow 3s linear;
+		    animation-iteration-count: infinite;
+        }
+        @keyframes rainbow
+        {
+            100%,0%{color: rgb(255,0,0);}
+            8%{color: rgb(255,127,0);}
+            16%{color: rgb(255,255,0);}
+            25%{color: rgb(127,255,0);}
+            33%{color: rgb(0,255,0);}
+            41%{color: rgb(0,255,127);}
+            50%{color: rgb(0,255,255);}
+            58%{color: rgb(0,127,255);}
+            66%{color: rgb(0,0,255);}
+            75%{color: rgb(127,0,255);}
+            83%{color: rgb(255,0,255);}
+            91%{color: rgb(255,0,127);}
+        }
 	</style>
 
 </head>
@@ -56,6 +76,38 @@
 	<main>
 		<div>
             <h1>Changelog</h1>
+            <!-- =============================================================  -->
+
+			<h2>Verzia 1.2 17.11.2018</h2>
+			<h3>Major</h3>
+			<ul>
+                <li>Nove zobrazovanie noviniek</li>
+                <ul>
+                    <li>Kazdy update ma teraz svoju kartu, ktora sa da otvorit a zavriet</li>
+                    <li>Styl harmoniky</li>
+                    <li>S peknymi sipkami, ktore sa tocia (EFFECTS! FUCK YEAH!)</li>
+                    <li>Po otvoreni noviniek sa automaticky otvori karta s poslednym updatom</li>
+                </ul>
+                <li>Uprava UI v citatoch a konverzaciach</li>
+                <ul>
+                    <li>Teraz je mozne minimalizovat vsetky citaty jednym klikom a prejst rovno na konverzacie. (rovnako ako v novinkach)</li>
+                    <li>Po otvoreni citaty.html sa automaticky otvori karta s citatmi</li>
+                </ul>
+                <li>Pridane obrazky - 24 (memes - 4, momentky - 6, nemcina - 1, other - 13)</li>
+                <li>Pridane videa - 5</li>
+                <li>Pridane 2 citaty a 4 konverzacie</li>
+			</ul>
+			<h3>Minor</h3>
+			<ul>
+			    <li>Pridany javascript subor blockView.js pre funkcnost kariet</li>
+			    <li class="rainbow">Prekrocili sme hranicu 1000 riadkov v style.css (CELEBRATE), tento rainbow efekt sa nerata :P</li>
+			</ul>
+			<h3>Bugy</h3>
+			<ul>
+			    <li>Ked je viewport vyssi ako html tak dole ostane biele miesto (pokus o fix mi nevysiel a nechce sa mi opravovat nieco co sa vyskytuje u 0.1% pouzivatelov)</li>
+			</ul>
+			<hr>
+            
             <!-- =============================================================  -->
 
 			<h2>Verzia 1.1.2 01.11.2018</h2>

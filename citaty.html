@@ -34,7 +34,7 @@
 
 	<title>4.A Memes</title>
 </head>
-<body>
+<body onload="expandFirst()">
 
 	<header id="hlavicka">
 		<a href="index.html"><img src="images/logoSkola4A.png" alt="logo skoly" id="logo"></a>
@@ -55,7 +55,12 @@
 
 	<main id="citaty-main">
 
-		<h3 class="content-nadpis">Naše najlepšie hlášky</h3>
+        <div class="blok-div-btn-citaty">
+		    <button class="blok-btn">Citáty</button>
+        </div>
+        <!--CITATY-->
+        <div class="blok-panel">
+		<h3 class="citaty-content-nadpis">Naše najlepšie hlášky</h3>
 		
 		<div class="citat-group">											<!--MIKU-->
 			<div class="citat-box">
@@ -211,6 +216,26 @@
             
             </div>
             
+        <div class="citat-group">											<!--KARIN-->
+            <div class="citat-box">
+                <p class="citat">
+                    &bdquo;Ešte jedna fotka a ti pripičím!&ldquo;
+                </p>
+                <p class="citat-autor">-Karin Alexovi, BA, 4.A</p>
+            </div>
+
+        </div>
+
+        <div class="citat-group">											<!--MATREZ-->
+            <div class="citat-box">
+                <p class="citat">
+                    &bdquo;Ty nekričíš keď na teba kričím??&ldquo;
+                </p>
+                <p class="citat-autor">-Matrez, 4.A</p>
+            </div>
+
+        </div>
+            
         <div class="citat-group">
                 <div class="citat-box">
                     <p class="citat">
@@ -238,9 +263,11 @@
 			<p class="citat-autor">-Admin, 20.05.2018</p>
 		</div>-->
 		
-<!----------------------------------------------------------------------------------------->
+		</div>
 		
-		<h3 class="content-nadpis">Naše najlepšie konverzácie</h3>
+<!----------------------------------------------------------------------------------------->
+        <!--KONVERZACIE-->
+		<h3 class="citaty-content-nadpis">Naše najlepšie konverzácie</h3>
 		
         <div class="dialog-row">
         <div class="dialog-column">
@@ -563,6 +590,49 @@
                         
                     </div>
                 </div>
+                
+            <div class="dialog-box">
+                <div class="dialog-text">
+
+                    <h3 class="dialog-nadpis">Gabo odpovedá na TIU</h3>
+                    <div class="dialog-gray-name">Keusch</div>
+                    <p class="dialog-gray">
+                        Ja som ešte takého roztatáreného, roztržitého študenta nevidel. Nechceš ty dakde predávať párky?
+                    </p>
+                    <br>
+
+                    <div class="dialog-blue-name">Gabo</div>
+                    <p class="dialog-blue">
+                        Už predávam.
+                        <br>(Robí v Kauflande pri šunkách, párkoch, syroch...)
+                    </p>                        
+                </div>
+            </div>  
+                      
+            <div class="dialog-box">
+                <div class="dialog-text">
+
+                    <h3 class="dialog-nadpis">Gabo po odpovedi na TIU</h3>
+                        
+                    <div class="dialog-blue-name">Gabo</div>
+                    <p class="dialog-blue">
+                        Čakal som 3 alebo 4 a nie 5.
+                    </p>
+                    <br>
+                        
+                    <div class="dialog-gray-name">Baffi</div>
+                    <p class="dialog-gray">
+                        A čo si dostal?
+                    </p>
+                    <br>
+                        
+                    <div class="dialog-blue-name">Gabo</div>
+                    <p class="dialog-blue">
+                        Štyri a pol.
+                    </p>
+                                                                        
+                </div>
+            </div>
         </div> <!--koniec 1 stlpca-->
         
         <div class="dialog-column">
@@ -903,8 +973,58 @@
                         
                     </div>
                 </div>
+                
+            <div class="dialog-box">
+                <h3 class="dialog-nadpis">Bežná nemčina</h3>
+
+                <div class="dialog-text">
+
+                    <div class="dialog-gray-name">Dittel</div>
+                    <p class="dialog-gray">
+                        Všetci čo máte mobily pod lavicou, choďte von!
+                    </p>
+                    <br>
+
+                    <div class="dialog-blue-name">Martin T.</div>
+                    <p class="dialog-blue">
+                        Čo tu chce ostať sama?
+                    </p>
+                </div>
+            </div>
+                
+            <div class="dialog-box">
+                <div class="dialog-text">
+
+                    <div class="dialog-gray-name">Dittel</div>
+                        <p class="dialog-gray">
+                            Kedy máte stužkovú?
+                         </p>
+                     <br>
+                     
+                     <div class="dialog-blue-name">Trieda</div>
+                        <p class="dialog-blue">
+                           Prvého decembra!
+                        </p>
+                        <br>
+
+                    <div class="dialog-gray-name">Dittel</div>
+                        <p class="dialog-gray">
+                            <em>*natešene*</em>
+                            <br>
+                            Takže sa ešte môžeme učiť
+                        </p>
+                        <br>
+                        
+                    <div class="dialog-blue-name">Hanek</div>
+                        <p class="dialog-blue">
+                            No ja by som to nepreháňal.
+                        </p>
+                        
+                </div>
+            </div>
         </div> <!--koniec 2 stlpca-->
         </div> <!--koniec flexu-->
+        </div> <!--koniec konverzacii-->
 	</main>
 	
 	<a href="javascript:" id="return-to-top"><i class="fas fa-angle-up"></i></a>
@@ -947,6 +1067,7 @@
 <script src="javascript/menu.js"></script>
 <script src="javascript/verzia.js"></script>
 <script src="javascript/header.js"></script>
+<script src="javascript/blockView.js"></script>
 
 </body>
 </html>
