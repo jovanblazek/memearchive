@@ -30,6 +30,8 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js"></script>
 
 	<title>4.A Memes</title>
 </head>
@@ -97,15 +99,17 @@
 <script src="javascript/menu.js"></script>
 <script src="javascript/verzia.js"></script>
 <script src="javascript/header.js"></script>
+<script src="javascript/login.js"></script>
 
+<!-- OLD LOGIN
 <script>
 	
 	$(function() 
 	{
 	    var visited = sessionStorage['visited'];
-	    if (!visited) {
+	    if (!visited) 
+        {
 	       warning();
-	       sessionStorage['visited'] = true;
 	    }
 
 	    function warning() 
@@ -114,6 +118,7 @@
 	    	if (r == true) 
 	    	{
 	        	console.log("Podmienky odúhlasené");
+                sessionStorage['visited'] = true;
 	    	} 
 	    	else 
 	    	{
@@ -121,7 +126,8 @@
 	    	}
 		}
 	});
-</script>
+</script>-->
+
 
 </body>
 </html>

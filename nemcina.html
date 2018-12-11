@@ -30,6 +30,12 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	
+	<!--LAZY LOAD-->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.9/jquery.lazy.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.9/jquery.lazy.plugins.min.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js"></script>
 
 	<title>4.A Memes</title>
 </head>
@@ -56,52 +62,52 @@
 		<h3 class="content-nadpis">Naša nemčina</h3>
 		<div class="flex-row">
 			<div class="flex-column">
-                <div class="box"><img src="images/memes/nemcina/nemcina_belike.jpg" alt="nemcina_belike"></div>
-                <div class="box"><img src="images/memes/nemcina/traja_nemcina.jpg" alt="traja_nemcina"></div>
-                <div class="box"><img src="images/memes/nemcina/herty_nemcina.jpg" alt="herty_nemcina"></div>
-                <div class="box"><img src="images/memes/nemcina/gabo_nemcina.jpg" alt="gabo_nemcina"></div>
-                <div class="box"><img src="images/memes/nemcina/prezentacia.jpg" alt="prezentacia"></div>
-                <div class="box"><img src="images/memes/nemcina/dead_inside.jpg" alt="dead"></div>
-				<div class="box"><img src="images/memes/nemcina/dittel_thuglife.jpg" alt="dittel_thuglife"></div>
-				<div class="box"><img src="images/memes/nemcina/dittel_projektor.jpg" alt="dittel_projektor"></div>
-				<div class="box"><img src="images/memes/nemcina/nj_slovicka.jpg" alt="nj_slovicka"></div>
-				<div class="box"><img src="images/memes/nemcina/baffi_slovakai.jpg" alt="baffi_slovakai"></div>
-				<div class="box"><img src="images/memes/nemcina/nj_seagul.jpg" alt="nj_seagul"></div>
+                <div class="box"><img class="lazy" data-src="images/memes/nemcina/nemcina_belike.jpg" alt="nemcina_belike"></div>
+                <div class="box"><img class="lazy" data-src="images/memes/nemcina/traja_nemcina.jpg" alt="traja_nemcina"></div>
+                <div class="box"><img class="lazy" data-src="images/memes/nemcina/herty_nemcina.jpg" alt="herty_nemcina"></div>
+                <div class="box"><img class="lazy" data-src="images/memes/nemcina/gabo_nemcina.jpg" alt="gabo_nemcina"></div>
+                <div class="box"><img class="lazy" data-src="images/memes/nemcina/prezentacia.jpg" alt="prezentacia"></div>
+                <div class="box"><img class="lazy" data-src="images/memes/nemcina/dead_inside.jpg" alt="dead"></div>
+				<div class="box"><img class="lazy" data-src="images/memes/nemcina/dittel_thuglife.jpg" alt="dittel_thuglife"></div>
+				<div class="box"><img class="lazy" data-src="images/memes/nemcina/dittel_projektor.jpg" alt="dittel_projektor"></div>
+				<div class="box"><img class="lazy" data-src="images/memes/nemcina/nj_slovicka.jpg" alt="nj_slovicka"></div>
+				<div class="box"><img class="lazy" data-src="images/memes/nemcina/baffi_slovakai.jpg" alt="baffi_slovakai"></div>
+				<div class="box"><img class="lazy" data-src="images/memes/nemcina/nj_seagul.jpg" alt="nj_seagul"></div>
             </div>
             <div class="flex-column">
-                <div class="box"><img src="images/memes/nemcina/nj_cisla.jpg" alt="nj_cisla"></div>
-				<div class="box"><img src="images/memes/nemcina/nj_neprepadnes.jpg" alt="nj_neprepadnes"></div>
-                <div class="box"><img src="images/memes/nemcina/nj_odpoved.jpg" alt="nj_odpoved"></div>
-                <div class="box"><img src="images/memes/nemcina/nj_slovicka2.jpg" alt="nj_slovicka2"></div>
-				<div class="box"><img src="images/memes/nemcina/skupina.jpg" alt="skupina"></div>
-				<div class="box"><img src="images/memes/nemcina/gabo_sikovny.jpg" alt="gabo_sikovny"></div>
-				<div class="box"><img src="images/memes/nemcina/zivot.png" alt="zivot"></div>
-				<div class="box"><img src="images/memes/nemcina/po_hodine.jpg" alt="po_hodine"></div>
-				<div class="box"><img src="images/memes/nemcina/po_hodine2.jpg" alt="po_hodine2"></div>
-				<div class="box"><img src="images/memes/nemcina/klasika.jpg" alt="klasika"></div>
-				<div class="box"><img src="images/memes/nemcina/gabo_nodo.jpg" alt="gabo_nodo"></div>
+                <div class="box"><img class="lazy" data-src="images/memes/nemcina/nj_cisla.jpg" alt="nj_cisla"></div>
+				<div class="box"><img class="lazy" data-src="images/memes/nemcina/nj_neprepadnes.jpg" alt="nj_neprepadnes"></div>
+                <div class="box"><img class="lazy" data-src="images/memes/nemcina/nj_odpoved.jpg" alt="nj_odpoved"></div>
+                <div class="box"><img class="lazy" data-src="images/memes/nemcina/nj_slovicka2.jpg" alt="nj_slovicka2"></div>
+				<div class="box"><img class="lazy" data-src="images/memes/nemcina/skupina.jpg" alt="skupina"></div>
+				<div class="box"><img class="lazy" data-src="images/memes/nemcina/gabo_sikovny.jpg" alt="gabo_sikovny"></div>
+				<div class="box"><img class="lazy" data-src="images/memes/nemcina/zivot.png" alt="zivot"></div>
+				<div class="box"><img class="lazy" data-src="images/memes/nemcina/po_hodine.jpg" alt="po_hodine"></div>
+				<div class="box"><img class="lazy" data-src="images/memes/nemcina/po_hodine2.jpg" alt="po_hodine2"></div>
+				<div class="box"><img class="lazy" data-src="images/memes/nemcina/klasika.jpg" alt="klasika"></div>
+				<div class="box"><img class="lazy" data-src="images/memes/nemcina/gabo_nodo.jpg" alt="gabo_nodo"></div>
             </div>
             <div class="flex-column">
-                <div class="box"><img src="images/memes/nemcina/mikula_literatura.jpg" alt="mikula_literatura"></div>
-                <div class="box"><img src="images/memes/nemcina/litt.jpg" alt="litt"></div>
-				<div class="box"><img src="images/memes/nemcina/antworte.jpg" alt="antworte"></div>
-				<div class="box"><img src="images/memes/nemcina/antwortete.jpg" alt="antwortete"></div>
-				<div class="box"><img src="images/memes/nemcina/baffi_hlbsie.jpg" alt="baffi_hlbsie"></div>
-				<div class="box"><img src="images/memes/nemcina/dlhe_slovo.jpg" alt="dlhe_slovo"></div>
-				<div class="box"><img src="images/memes/nemcina/mikula_uzivam.jpg" alt="mikula_uzivam"></div>
-				<div class="box"><img src="images/memes/nemcina/baffi_daking.jpg" alt="baffi_daking"></div>
-				<div class="box"><img src="images/memes/nemcina/heil.jpg" alt="heil"></div>	
+                <div class="box"><img class="lazy" data-src="images/memes/nemcina/mikula_literatura.jpg" alt="mikula_literatura"></div>
+                <div class="box"><img class="lazy" data-src="images/memes/nemcina/litt.jpg" alt="litt"></div>
+				<div class="box"><img class="lazy" data-src="images/memes/nemcina/antworte.jpg" alt="antworte"></div>
+				<div class="box"><img class="lazy" data-src="images/memes/nemcina/antwortete.jpg" alt="antwortete"></div>
+				<div class="box"><img class="lazy" data-src="images/memes/nemcina/baffi_hlbsie.jpg" alt="baffi_hlbsie"></div>
+				<div class="box"><img class="lazy" data-src="images/memes/nemcina/dlhe_slovo.jpg" alt="dlhe_slovo"></div>
+				<div class="box"><img class="lazy" data-src="images/memes/nemcina/mikula_uzivam.jpg" alt="mikula_uzivam"></div>
+				<div class="box"><img class="lazy" data-src="images/memes/nemcina/baffi_daking.jpg" alt="baffi_daking"></div>
+				<div class="box"><img class="lazy" data-src="images/memes/nemcina/heil.jpg" alt="heil"></div>	
 			</div>
 			<div class="flex-column">
-			    <div class="box"><img src="images/memes/nemcina/erik.jpg" alt="erik"></div>
-				<div class="box"><img src="images/memes/nemcina/martin_fajka.jpg" alt="martin_fajka"></div>
-				<div class="box"><img src="images/memes/nemcina/erik_nudes.jpg" alt="erik_nudes"></div>
-				<div class="box"><img src="images/memes/nemcina/duso_genius.jpg" alt="duso_genius"></div>
-				<div class="box"><img src="images/memes/nemcina/jak_ne.jpg" alt="jak_ne"></div>
-				<div class="box"><img src="images/memes/nemcina/mikula_hlupy.jpg" alt="mikula_hlupy"></div>
-				<div class="box"><img src="images/memes/nemcina/cigi_wat.png" alt="cigi_wat"></div>
-				<div class="box"><img src="images/memes/nemcina/spolocna.jpg" alt="spolocna"></div>
-				<div class="box"><img src="images/memes/nemcina/nuda_opr.jpg" alt="nuda"></div>
+			    <div class="box"><img class="lazy" data-src="images/memes/nemcina/erik.jpg" alt="erik"></div>
+				<div class="box"><img class="lazy" data-src="images/memes/nemcina/martin_fajka.jpg" alt="martin_fajka"></div>
+				<div class="box"><img class="lazy" data-src="images/memes/nemcina/erik_nudes.jpg" alt="erik_nudes"></div>
+				<div class="box"><img class="lazy" data-src="images/memes/nemcina/duso_genius.jpg" alt="duso_genius"></div>
+				<div class="box"><img class="lazy" data-src="images/memes/nemcina/jak_ne.jpg" alt="jak_ne"></div>
+				<div class="box"><img class="lazy" data-src="images/memes/nemcina/mikula_hlupy.jpg" alt="mikula_hlupy"></div>
+				<div class="box"><img class="lazy" data-src="images/memes/nemcina/cigi_wat.png" alt="cigi_wat"></div>
+				<div class="box"><img class="lazy" data-src="images/memes/nemcina/spolocna.jpg" alt="spolocna"></div>
+				<div class="box"><img class="lazy" data-src="images/memes/nemcina/nuda_opr.jpg" alt="nuda"></div>
 			</div>
         </div>
 	</main>
@@ -126,26 +132,12 @@
 
 
 
-
-<script type="text/javascript">
-	// ===== Scroll to Top ==== 
-	$(window).scroll(function() {
-	    if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
-	        $('#return-to-top').fadeIn(200);    // Fade in the arrow
-	    } else {
-	        $('#return-to-top').fadeOut(200);   // Else fade out the arrow
-	    }
-	});
-	$('#return-to-top').click(function() {      // When arrow is clicked
-	    $('body,html').animate({
-	        scrollTop : 0                       // Scroll to top of body
-	    }, 500);
-	});
-</script>
-
 <script src="javascript/menu.js"></script>
 <script src="javascript/verzia.js"></script>
 <script src="javascript/header.js"></script>
+<script src="javascript/backToTop.js"></script>
+<script src="javascript/lazyLoad.js"></script>
+<script src="javascript/login.js"></script>
 
 </body>
 </html>

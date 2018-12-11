@@ -31,6 +31,12 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	
+	<!--LAZY LOAD-->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.9/jquery.lazy.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.9/jquery.lazy.plugins.min.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js"></script>
 
 	<title>4.A Memes</title>
 </head>
@@ -64,36 +70,36 @@
 		<h3 class="novinky-podnadpis">Obrázky</h3>
 		<div class="flex-row">
 			<div class="flex-column">
-			    <div class="box"><img src="images/memes/mikula_slucka.jpg" alt="mikula_slucka"></div>
-                <div class="box"><img src="images/memes/baffi_depression.jpg" alt="baffi_depression"></div>
-                <div class="box"><img src="images/memes/baffi_endme.jpg" alt="baffi_endme"></div>
-                <div class="box"><img src="images/memes/peto_segal.jpg" alt="peto_segal"></div>
-                <div class="box"><img src="images/memes/nemcina/nemcina_belike.jpg" alt="nemcina_belike"></div>
-                <div class="box"><img src="images/memes/momentky/sebko_tycinky.jpg" alt="sebko_tycinky.jpg"></div>
+			    <div class="box"><img class="lazy" data-src="images/memes/mikula_slucka.jpg" alt="mikula_slucka"></div>
+                <div class="box"><img class="lazy" data-src="images/memes/baffi_depression.jpg" alt="baffi_depression"></div>
+                <div class="box"><img class="lazy" data-src="images/memes/baffi_endme.jpg" alt="baffi_endme"></div>
+                <div class="box"><img class="lazy" data-src="images/memes/peto_segal.jpg" alt="peto_segal"></div>
+                <div class="box"><img class="lazy" data-src="images/memes/nemcina/nemcina_belike.jpg" alt="nemcina_belike"></div>
+                <div class="box"><img class="lazy" data-src="images/memes/momentky/sebko_tycinky.jpg" alt="sebko_tycinky.jpg"></div>
             </div>
             <div class="flex-column">
-                <div class="box"><img src="images/memes/momentky/baffi_kiss.png" alt="baffi_kiss.png"></div>
-                <div class="box"><img src="images/memes/momentky/matus_vykrik.png" alt="matus_vykrik.png"></div>
-                <div class="box"><img src="images/memes/momentky/erik_face.jpg" alt="erik_face.jpg"></div>
-                <div class="box"><img src="images/memes/momentky/gabo_lyziar.jpg" alt="gabo_lyziar.jpg"></div>
-                <div class="box"><img src="images/memes/momentky/copek.jpg" alt="copek.jpg"></div>
+                <div class="box"><img class="lazy" data-src="images/memes/momentky/baffi_kiss.png" alt="baffi_kiss.png"></div>
+                <div class="box"><img class="lazy" data-src="images/memes/momentky/matus_vykrik.png" alt="matus_vykrik.png"></div>
+                <div class="box"><img class="lazy" data-src="images/memes/momentky/erik_face.jpg" alt="erik_face.jpg"></div>
+                <div class="box"><img class="lazy" data-src="images/memes/momentky/gabo_lyziar.jpg" alt="gabo_lyziar.jpg"></div>
+                <div class="box"><img class="lazy" data-src="images/memes/momentky/copek.jpg" alt="copek.jpg"></div>
             </div>
             <div class="flex-column">
-                <div class="box"><img src="images/memes/other/baffi_expensive.jpg" alt="baffi_expensive.jpg"></div>
-                <div class="box"><img src="images/memes/other/baffi_mexican.jpg" alt="baffi_mexican.jpg"></div>
-                <div class="box"><img src="images/memes/other/bucko_maska.jpg" alt="bucko_maska.jpg"></div>
-                <div class="box"><img src="images/memes/other/edo_leg.jpg" alt="edo_leg.jpg"></div>
-                <div class="box"><img src="images/memes/other/gabor.jpg" alt="gabor.jpg"></div>
-                <div class="box"><img src="images/memes/other/havrilova.jpg" alt="havrilova.jpg"></div>
+                <div class="box"><img class="lazy" data-src="images/memes/other/baffi_expensive.jpg" alt="baffi_expensive.jpg"></div>
+                <div class="box"><img class="lazy" data-src="images/memes/other/baffi_mexican.jpg" alt="baffi_mexican.jpg"></div>
+                <div class="box"><img class="lazy" data-src="images/memes/other/bucko_maska.jpg" alt="bucko_maska.jpg"></div>
+                <div class="box"><img class="lazy" data-src="images/memes/other/edo_leg.jpg" alt="edo_leg.jpg"></div>
+                <div class="box"><img class="lazy" data-src="images/memes/other/gabor.jpg" alt="gabor.jpg"></div>
+                <div class="box"><img class="lazy" data-src="images/memes/other/havrilova.jpg" alt="havrilova.jpg"></div>
             </div>
             <div class="flex-column">
-                <div class="box"><img src="images/memes/other/love3.jpg" alt="love3.jpg"></div>
-                <div class="box"><img src="images/memes/other/mikula_neo.jpg" alt="mikula_neo.jpg"></div>
-                <div class="box"><img src="images/memes/other/risokiko.jpg" alt="risokiko.jpg"></div>
-                <div class="box"><img src="images/memes/other/squad.jpg" alt="squad.jpg"></div>
-                <div class="box"><img src="images/memes/other/squad2.jpg" alt="squad2.jpg"></div>
-                <div class="box"><img src="images/memes/other/squad3.jpg" alt="squad3.jpg"></div>
-                <div class="box"><img src="images/memes/other/squad4.jpg" alt="squad4.jpg"></div>
+                <div class="box"><img class="lazy" data-src="images/memes/other/love3.jpg" alt="love3.jpg"></div>
+                <div class="box"><img class="lazy" data-src="images/memes/other/mikula_neo.jpg" alt="mikula_neo.jpg"></div>
+                <div class="box"><img class="lazy" data-src="images/memes/other/risokiko.jpg" alt="risokiko.jpg"></div>
+                <div class="box"><img class="lazy" data-src="images/memes/other/squad.jpg" alt="squad.jpg"></div>
+                <div class="box"><img class="lazy" data-src="images/memes/other/squad2.jpg" alt="squad2.jpg"></div>
+                <div class="box"><img class="lazy" data-src="images/memes/other/squad3.jpg" alt="squad3.jpg"></div>
+                <div class="box"><img class="lazy" data-src="images/memes/other/squad4.jpg" alt="squad4.jpg"></div>
 			</div>
 		</div>
 		
@@ -287,27 +293,27 @@
 		<h3 class="novinky-podnadpis">Obrázky</h3>
 		<div class="flex-row">
 			<div class="flex-column">
-			    <div class="box"><img src="images/memes/momentky/gabo_spi.jpg" alt="gabo_spi.jpg"></div>
-                <div class="box"><img src="images/memes/other/love2.jpg" alt="love2.jpg"></div>
-                <div class="box"><img src="images/memes/nemcina/herty_nemcina.jpg" alt="herty_nemcina.jpg"></div>
-                <div class="box"><img src="images/memes/gabo_vezmes.jpg" alt="gabo_vezmes.jpg"></div>
+			    <div class="box"><img class="lazy" data-src="images/memes/momentky/gabo_spi.jpg" alt="gabo_spi.jpg"></div>
+                <div class="box"><img class="lazy" data-src="images/memes/other/love2.jpg" alt="love2.jpg"></div>
+                <div class="box"><img class="lazy" data-src="images/memes/nemcina/herty_nemcina.jpg" alt="herty_nemcina.jpg"></div>
+                <div class="box"><img class="lazy" data-src="images/memes/gabo_vezmes.jpg" alt="gabo_vezmes.jpg"></div>
             </div>
             <div class="flex-column">
-                <div class="box"><img src="images/memes/momentky/duso_jazyk.jpg" alt="duso_jazyk.jpg"></div>
-                <div class="box"><img src="images/memes/nemcina/gabo_nemcina.jpg" alt="gabo_nemcina.jpg"></div>
-                <div class="box"><img src="images/memes/baffi_hlava.jpg" alt="baffi_hlava.jpg"></div>
-                <div class="box"><img src="images/memes/gabo_komunista.jpg" alt="gabo_komunista.jpg"></div>
+                <div class="box"><img class="lazy" data-src="images/memes/momentky/duso_jazyk.jpg" alt="duso_jazyk.jpg"></div>
+                <div class="box"><img class="lazy" data-src="images/memes/nemcina/gabo_nemcina.jpg" alt="gabo_nemcina.jpg"></div>
+                <div class="box"><img class="lazy" data-src="images/memes/baffi_hlava.jpg" alt="baffi_hlava.jpg"></div>
+                <div class="box"><img class="lazy" data-src="images/memes/gabo_komunista.jpg" alt="gabo_komunista.jpg"></div>
             </div>
             <div class="flex-column">
-                <div class="box"><img src="images/memes/nemcina/traja_nemcina.jpg" alt="traja_nemcina.jpg"> </div>
-                <div class="box"><img src="images/memes/matika/matika_innutshell.jpg" alt="matika_innutshell.jpg"></div>
-                <div class="box"><img src="images/memes/cigi_gelnica.jpg" alt="cigi_gelnica.jpg"></div>
-                <div class="box"><img src="images/memes/gabo_partnerka.jpg" alt="gabo_partnerka.jpg"></div>
+                <div class="box"><img class="lazy" data-src="images/memes/nemcina/traja_nemcina.jpg" alt="traja_nemcina.jpg"> </div>
+                <div class="box"><img class="lazy" data-src="images/memes/matika/matika_innutshell.jpg" alt="matika_innutshell.jpg"></div>
+                <div class="box"><img class="lazy" data-src="images/memes/cigi_gelnica.jpg" alt="cigi_gelnica.jpg"></div>
+                <div class="box"><img class="lazy" data-src="images/memes/gabo_partnerka.jpg" alt="gabo_partnerka.jpg"></div>
             </div>
             <div class="flex-column">
-                <div class="box"><img src="images/memes/cigi_papier1.jpg" alt="cigi_papier1.jpg"></div>
-                <div class="box"><img src="images/memes/cigi_papier2.jpg" alt="cigi_papier2.jpg"></div>
-                <div class="box"><img src="images/memes/cigi_papier3.jpg" alt="cigi_papier3.jpg"></div>
+                <div class="box"><img class="lazy" data-src="images/memes/cigi_papier1.jpg" alt="cigi_papier1.jpg"></div>
+                <div class="box"><img class="lazy" data-src="images/memes/cigi_papier2.jpg" alt="cigi_papier2.jpg"></div>
+                <div class="box"><img class="lazy" data-src="images/memes/cigi_papier3.jpg" alt="cigi_papier3.jpg"></div>
 			</div>
 		</div>
 		
@@ -450,21 +456,21 @@
 		<h3 class="novinky-podnadpis">Obrázky</h3>
 		<div class="flex-row">
 			<div class="flex-column">
-			    <div class="box"><img src="images/memes/matika/hrivnakova_wot.jpg" alt="hrivnakova_wot.jpg"> </div>
-               <div class="box"><img src="images/memes/other/baffi_gabo.jpg" alt="baffi_gabo.jpg"></div>
+			    <div class="box"><img class="lazy" data-src="images/memes/matika/hrivnakova_wot.jpg" alt="hrivnakova_wot.jpg"> </div>
+               <div class="box"><img class="lazy" data-src="images/memes/other/baffi_gabo.jpg" alt="baffi_gabo.jpg"></div>
             </div>
             <div class="flex-column">
-                <div class="box"><img src="images/memes/matika/matika_du.jpg" alt="matika_du.jpg"></div>
-                <div class="box"><img src="images/memes/other/baffi_strom.jpg" alt="baffi_strom.jpg"></div>
+                <div class="box"><img class="lazy" data-src="images/memes/matika/matika_du.jpg" alt="matika_du.jpg"></div>
+                <div class="box"><img class="lazy" data-src="images/memes/other/baffi_strom.jpg" alt="baffi_strom.jpg"></div>
             </div>
             <div class="flex-column">
-                <div class="box"><img src="images/memes/mikula_deevil.jpg" alt="mikula_deevil.jpg"></div>
-                <div class="box"><img src="images/memes/other/love.jpg" alt="love.jpg"></div>
-                <div class="box"><img src="images/memes/other/mikula_odvoz.jpg" alt="mikula_odvoz.jpg"></div>
+                <div class="box"><img class="lazy" data-src="images/memes/mikula_deevil.jpg" alt="mikula_deevil.jpg"></div>
+                <div class="box"><img class="lazy" data-src="images/memes/other/love.jpg" alt="love.jpg"></div>
+                <div class="box"><img class="lazy" data-src="images/memes/other/mikula_odvoz.jpg" alt="mikula_odvoz.jpg"></div>
             </div>
             <div class="flex-column">
-                <div class="box"><img src="images/memes/duso_insta.png" alt="duso_insta.png"></div>
-                <div class="box"><img src="images/memes/other/mikula_sleep.jpg" alt="mikula_sleep.jpg"></div>
+                <div class="box"><img class="lazy" data-src="images/memes/duso_insta.png" alt="duso_insta.png"></div>
+                <div class="box"><img class="lazy" data-src="images/memes/other/mikula_sleep.jpg" alt="mikula_sleep.jpg"></div>
 			</div>
 		</div>
 	
@@ -665,19 +671,19 @@
 		<h3 class="novinky-podnadpis">Obrázky</h3>
 		<div class="flex-row">
 			<div class="flex-column">
-			    <div class="box"><img src="images/memes/mikula_smart.jpg" alt="mikula_smart.jpg"></div>
-                <div class="box"><img src="images/memes/other/mikula_nsfw.jpg" alt="mikula_nsfw.jpg"></div>
+			    <div class="box"><img class="lazy" data-src="images/memes/mikula_smart.jpg" alt="mikula_smart.jpg"></div>
+                <div class="box"><img class="lazy" data-src="images/memes/other/mikula_nsfw.jpg" alt="mikula_nsfw.jpg"></div>
             </div>
             <div class="flex-column">
-                <div class="box"><img src="images/memes/matus_jezus.jpg" alt="matus_jezus.jpg"></div>
-                <div class="box"><img src="images/memes/other/babka.jpg" alt="babka.jpg"></div>
+                <div class="box"><img class="lazy" data-src="images/memes/matus_jezus.jpg" alt="matus_jezus.jpg"></div>
+                <div class="box"><img class="lazy" data-src="images/memes/other/babka.jpg" alt="babka.jpg"></div>
             </div>
             <div class="flex-column">
-                <div class="box"><img src="images/memes/pegs_keusch.jpg" alt="pegs_keusch.jpg"></div>
-                <div class="box"><img src="images/memes/other/simon_paska.jpg" alt="simon_paska.jpg"></div>
+                <div class="box"><img class="lazy" data-src="images/memes/pegs_keusch.jpg" alt="pegs_keusch.jpg"></div>
+                <div class="box"><img class="lazy" data-src="images/memes/other/simon_paska.jpg" alt="simon_paska.jpg"></div>
             </div>
             <div class="flex-column">
-                <div class="box"><img src="images/memes/other/edo_done.jpg" alt="edo_done.jpg"></div>
+                <div class="box"><img class="lazy" data-src="images/memes/other/edo_done.jpg" alt="edo_done.jpg"></div>
 			</div>
 		</div>
 	
@@ -794,26 +800,14 @@
 
 
 
-<script type="text/javascript">
-	// ===== Scroll to Top ==== 
-	$(window).scroll(function() {
-	    if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
-	        $('#return-to-top').fadeIn(200);    // Fade in the arrow
-	    } else {
-	        $('#return-to-top').fadeOut(200);   // Else fade out the arrow
-	    }
-	});
-	$('#return-to-top').click(function() {      // When arrow is clicked
-	    $('body,html').animate({
-	        scrollTop : 0                       // Scroll to top of body
-	    }, 500);
-	});    
-</script>
 
 <script src="javascript/menu.js"></script>
 <script src="javascript/verzia.js"></script>
 <script src="javascript/header.js"></script>
 <script src="javascript/blockView.js"></script>
+<script src="javascript/backToTop.js"></script>
+<script src="javascript/lazyLoad.js"></script>
+<script src="javascript/login.js"></script>
 
 </body>
 </html>

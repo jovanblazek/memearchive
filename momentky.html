@@ -30,6 +30,12 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	
+	<!--LAZY LOAD-->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.9/jquery.lazy.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.9/jquery.lazy.plugins.min.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js"></script>
 
 	<title>4.A Memes</title>
 </head>
@@ -56,76 +62,75 @@
 		<h3 class="content-nadpis">Momentky</h3>
 		<div class="flex-row">
 			<div class="flex-column">
-				<div class="box"><img src="images/memes/momentky/adam.jpg" alt="adam.jpg"></div>
-                <div class="box"><img src="images/memes/momentky/baffi_face.jpg" alt="baffi_face.jpg"></div>
-                <div class="box"><img src="images/memes/momentky/baffi_haha.jpg" alt="baffi_haha.jpg"></div>
-                <div class="box"><img src="images/memes/momentky/baffi_kiss.png" alt="baffi_kiss.png"></div>
-                <div class="box"><img src="images/memes/momentky/baffi_spi.jpg" alt="baffi_spi.jpg"></div>
-                <div class="box"><img src="images/memes/momentky/baffi_vykrik.jpg" alt="baffi_vykrik.jpg"></div>
-                <div class="box"><img src="images/memes/momentky/baffi_wat.jpg" alt="baffi_wat.jpg"></div>
-                <div class="box"><img src="images/memes/momentky/bucko_voda.jpg" alt="bucko_voda.jpg"></div>
-                <div class="box"><img src="images/memes/momentky/cigi.jpg" alt="cigi.jpg"></div>
-                <div class="box"><img src="images/memes/momentky/cigi_facepalm.jpg" alt="cigi_facepalm.jpg"></div>
-                <div class="box"><img src="images/memes/momentky/cigi_nos.png" alt="cigi_nos.png"></div>
-                <div class="box"><img src="images/memes/momentky/cigi_trava.png" alt="cigi_trava.png"></div>
-                <div class="box"><img src="images/memes/momentky/cigi_usmev.jpg" alt="cigi_usmev.jpg"></div>
-                <div class="box"><img src="images/memes/momentky/copek.jpg" alt="copek.jpg"></div>
-                <div class="box"><img src="images/memes/momentky/dodo_jedlo.jpg" alt="dodo_jedlo.jpg"></div>
-                <div class="box"><img src="images/memes/momentky/dodo_satna.jpg" alt="dodo_satna.jpg"></div>
+				<div class="box"><img class="lazy" data-src="images/memes/momentky/adam.jpg" alt="adam.jpg"></div>
+                <div class="box"><img class="lazy" data-src="images/memes/momentky/baffi_face.jpg" alt="baffi_face.jpg"></div>
+                <div class="box"><img class="lazy" data-src="images/memes/momentky/baffi_haha.jpg" alt="baffi_haha.jpg"></div>
+                <div class="box"><img class="lazy" data-src="images/memes/momentky/baffi_kiss.png" alt="baffi_kiss.png"></div>
+                <div class="box"><img class="lazy" data-src="images/memes/momentky/baffi_spi.jpg" alt="baffi_spi.jpg"></div>
+                <div class="box"><img class="lazy" data-src="images/memes/momentky/baffi_vykrik.jpg" alt="baffi_vykrik.jpg"></div>
+                <div class="box"><img class="lazy" data-src="images/memes/momentky/baffi_wat.jpg" alt="baffi_wat.jpg"></div>
+                <div class="box"><img class="lazy" data-src="images/memes/momentky/bucko_voda.jpg" alt="bucko_voda.jpg"></div>
+                <div class="box"><img class="lazy" data-src="images/memes/momentky/cigi.jpg" alt="cigi.jpg"></div>
+                <div class="box"><img class="lazy" data-src="images/memes/momentky/cigi_facepalm.jpg" alt="cigi_facepalm.jpg"></div>
+                <div class="box"><img class="lazy" data-src="images/memes/momentky/cigi_nos.png" alt="cigi_nos.png"></div>
+                <div class="box"><img class="lazy" data-src="images/memes/momentky/cigi_trava.png" alt="cigi_trava.png"></div>
+                <div class="box"><img class="lazy" data-src="images/memes/momentky/cigi_usmev.jpg" alt="cigi_usmev.jpg"></div>
+                <div class="box"><img class="lazy" data-src="images/memes/momentky/copek.jpg" alt="copek.jpg"></div>
+                <div class="box"><img class="lazy" data-src="images/memes/momentky/dodo_jedlo.jpg" alt="dodo_jedlo.jpg"></div>
+                <div class="box"><img class="lazy" data-src="images/memes/momentky/dodo_satna.jpg" alt="dodo_satna.jpg"></div>
             </div>
             <div class="flex-column">
 				
-                <div class="box"><img src="images/memes/momentky/duso_dama.jpg" alt="duso_dama.jpg"></div>
-                <div class="box"><img src="images/memes/momentky/duso_jedlo.jpg" alt="duso_jedlo.jpg"></div>
-                <div class="box"><img src="images/memes/momentky/duso_jazyk.jpg" alt="duso_jazyk.jpg"></div>
-                <div class="box"><img src="images/memes/momentky/duso_mikina.jpg" alt="duso_mikina.jpg"></div>
-                <div class="box"><img src="images/memes/momentky/duso_spi.jpg" alt="duso_spi.jpg"></div>
-                <div class="box"><img src="images/memes/momentky/edo.png" alt="edo.png"></div>
-                <div class="box"><img src="images/memes/momentky/edo_dead.jpg" alt="edo_dead.jpg"></div>
-                <div class="box"><img src="images/memes/momentky/edo_face.jpg" alt="edo_face.jpg"></div>
-                <div class="box"><img src="images/memes/momentky/edo_lopta.jpg" alt="edo_lopta.jpg"></div>
-                <div class="box"><img src="images/memes/momentky/edo_scary.jpg" alt="edo_scary.jpg"></div>
-                <div class="box"><img src="images/memes/momentky/edo_wat.jpg" alt="edo_wat.jpg"></div>
-                <div class="box"><img src="images/memes/momentky/edo_wat2.jpg" alt="edo_wat2.jpg"></div>
-                <div class="box"><img src="images/memes/momentky/erik_face.jpg" alt="erik_face.jpg"></div>
-                <div class="box"><img src="images/memes/momentky/gabo_lyziar.jpg" alt="gabo_lyziar.jpg"></div>
-                <div class="box"><img src="images/memes/momentky/gabo_single.jpg" alt="gabo_single.jpg"></div>
+                <div class="box"><img class="lazy" data-src="images/memes/momentky/duso_dama.jpg" alt="duso_dama.jpg"></div>
+                <div class="box"><img class="lazy" data-src="images/memes/momentky/duso_jedlo.jpg" alt="duso_jedlo.jpg"></div>
+                <div class="box"><img class="lazy" data-src="images/memes/momentky/duso_jazyk.jpg" alt="duso_jazyk.jpg"></div>
+                <div class="box"><img class="lazy" data-src="images/memes/momentky/duso_mikina.jpg" alt="duso_mikina.jpg"></div>
+                <div class="box"><img class="lazy" data-src="images/memes/momentky/duso_spi.jpg" alt="duso_spi.jpg"></div>
+                <div class="box"><img class="lazy" data-src="images/memes/momentky/edo.png" alt="edo.png"></div>
+                <div class="box"><img class="lazy" data-src="images/memes/momentky/edo_dead.jpg" alt="edo_dead.jpg"></div>
+                <div class="box"><img class="lazy" data-src="images/memes/momentky/edo_face.jpg" alt="edo_face.jpg"></div>
+                <div class="box"><img class="lazy" data-src="images/memes/momentky/edo_lopta.jpg" alt="edo_lopta.jpg"></div>
+                <div class="box"><img class="lazy" data-src="images/memes/momentky/edo_scary.jpg" alt="edo_scary.jpg"></div>
+                <div class="box"><img class="lazy" data-src="images/memes/momentky/edo_wat.jpg" alt="edo_wat.jpg"></div>
+                <div class="box"><img class="lazy" data-src="images/memes/momentky/edo_wat2.jpg" alt="edo_wat2.jpg"></div>
+                <div class="box"><img class="lazy" data-src="images/memes/momentky/erik_face.jpg" alt="erik_face.jpg"></div>
+                <div class="box"><img class="lazy" data-src="images/memes/momentky/gabo_lyziar.jpg" alt="gabo_lyziar.jpg"></div>
+                <div class="box"><img class="lazy" data-src="images/memes/momentky/gabo_single.jpg" alt="gabo_single.jpg"></div>
                 
             </div>
             <div class="flex-column">
-                <div class="box"><img src="images/memes/momentky/gabo_spi.jpg" alt="gabo_spi.jpg"></div>
-                
-				<div class="box"><img src="images/memes/momentky/gabo_usta.jpg" alt="gabo_usta.jpg"></div>
-                <div class="box"><img src="images/memes/momentky/hanek_telesna.png" alt="hanek_telesna.png"></div>
-                <div class="box"><img src="images/memes/momentky/hanek_usta.jpg" alt="hanek_usta.jpg"></div>
-                <div class="box"><img src="images/memes/momentky/herty_face.jpg" alt="herty_face.jpg"></div>
-                <div class="box"><img src="images/memes/momentky/hertz_face.jpg" alt="hertz_face.jpg"></div>
-                <div class="box"><img src="images/memes/momentky/jovan_facepalm.jpg" alt="jovan_facepalm.jpg"></div>
-                <div class="box"><img src="images/memes/momentky/keuschfuzed.png" alt="keuschfuzed.png"></div>
-                <div class="box"><img src="images/memes/momentky/lukas_usta.jpg" alt="lukas_usta.jpg"></div>
-                <div class="box"><img src="images/memes/momentky/matrez_face.jpg" alt="matrez_face.jpg"></div>
-                <div class="box"><img src="images/memes/momentky/matrez_face2.jpg" alt="matrez_face2.jpg"></div>
-                <div class="box"><img src="images/memes/momentky/matrez_thumsup.jpg" alt="matrez_thumsup.jpg"></div>
-                <div class="box"><img src="images/memes/momentky/matrez_usta.jpg" alt="matrez_usta.jpg"></div>
-                <div class="box"><img src="images/memes/momentky/matus.jpg" alt="matus.jpg"></div>
+                <div class="box"><img class="lazy" data-src="images/memes/momentky/gabo_spi.jpg" alt="gabo_spi.jpg"></div>
+				<div class="box"><img class="lazy" data-src="images/memes/momentky/gabo_usta.jpg" alt="gabo_usta.jpg"></div>
+                <div class="box"><img class="lazy" data-src="images/memes/momentky/hanek_telesna.png" alt="hanek_telesna.png"></div>
+                <div class="box"><img class="lazy" data-src="images/memes/momentky/hanek_usta.jpg" alt="hanek_usta.jpg"></div>
+                <div class="box"><img class="lazy" data-src="images/memes/momentky/herty_face.jpg" alt="herty_face.jpg"></div>
+                <div class="box"><img class="lazy" data-src="images/memes/momentky/hertz_face.jpg" alt="hertz_face.jpg"></div>
+                <div class="box"><img class="lazy" data-src="images/memes/momentky/jovan_facepalm.jpg" alt="jovan_facepalm.jpg"></div>
+                <div class="box"><img class="lazy" data-src="images/memes/momentky/keuschfuzed.png" alt="keuschfuzed.png"></div>
+                <div class="box"><img class="lazy" data-src="images/memes/momentky/lukas_usta.jpg" alt="lukas_usta.jpg"></div>
+                <div class="box"><img class="lazy" data-src="images/memes/momentky/matrez_face.jpg" alt="matrez_face.jpg"></div>
+                <div class="box"><img class="lazy" data-src="images/memes/momentky/matrez_face2.jpg" alt="matrez_face2.jpg"></div>
+                <div class="box"><img class="lazy" data-src="images/memes/momentky/matrez_thumsup.jpg" alt="matrez_thumsup.jpg"></div>
+                <div class="box"><img class="lazy" data-src="images/memes/momentky/matrez_usta.jpg" alt="matrez_usta.jpg"></div>
+                <div class="box"><img class="lazy" data-src="images/memes/momentky/matus.jpg" alt="matus.jpg"></div>
 			</div>
 			<div class="flex-column">
-				<div class="box"><img src="images/memes/momentky/matus_mikina.jpg" alt="matus_mikina.jpg"></div>
-                <div class="box"><img src="images/memes/momentky/matus_smile.jpg" alt="matus_smile.jpg"></div>
-                <div class="box"><img src="images/memes/momentky/matus_taska.jpg" alt="matus_taska.jpg"></div>
-                <div class="box"><img src="images/memes/momentky/matus_vykrik.png" alt="matus_vykrik.png"></div>
-                <div class="box"><img src="images/memes/momentky/mikula_cecky.jpg" alt="mikula_cecky.jpg"></div>
-                <div class="box"><img src="images/memes/momentky/mikula_usta.jpg" alt="mikula_usta.jpg"></div>
-                <div class="box"><img src="images/memes/momentky/peto_okuliare.jpg" alt="peto_okuliare.jpg"></div>
-                <div class="box"><img src="images/memes/momentky/riso_face.png" alt="riso_face.png"></div>
-                <div class="box"><img src="images/memes/momentky/sebko_tycinky.jpg" alt="sebko_tycinky.jpg"></div>
-                <div class="box"><img src="images/memes/momentky/simon_face.jpg" alt="simon_face.jpg"></div>
-                <div class="box"><img src="images/memes/momentky/simon_florbal.jpg" alt="simon_florbal.jpg"></div>
-                <div class="box"><img src="images/memes/momentky/stefus_hellno.jpg" alt="stefus_hellno.jpg"></div>
-                <div class="box"><img src="images/memes/momentky/stefus_thumbsup.jpg" alt="stefus_thumbsup.jpg"></div>
-                <div class="box"><img src="images/memes/momentky/u_kidding.png" alt="u_kidding.png"></div>
-                <div class="box"><img src="images/memes/momentky/vilo_face.jpg" alt="vilo_face.jpg"></div>
-                <div class="box"><img src="images/memes/momentky/who_dis.jpg" alt="who_dis.jpg"></div>
+				<div class="box"><img class="lazy" data-src="images/memes/momentky/matus_mikina.jpg" alt="matus_mikina.jpg"></div>
+                <div class="box"><img class="lazy" data-src="images/memes/momentky/matus_smile.jpg" alt="matus_smile.jpg"></div>
+                <div class="box"><img class="lazy" data-src="images/memes/momentky/matus_taska.jpg" alt="matus_taska.jpg"></div>
+                <div class="box"><img class="lazy" data-src="images/memes/momentky/matus_vykrik.png" alt="matus_vykrik.png"></div>
+                <div class="box"><img class="lazy" data-src="images/memes/momentky/mikula_cecky.jpg" alt="mikula_cecky.jpg"></div>
+                <div class="box"><img class="lazy" data-src="images/memes/momentky/mikula_usta.jpg" alt="mikula_usta.jpg"></div>
+                <div class="box"><img class="lazy" data-src="images/memes/momentky/peto_okuliare.jpg" alt="peto_okuliare.jpg"></div>
+                <div class="box"><img class="lazy" data-src="images/memes/momentky/riso_face.png" alt="riso_face.png"></div>
+                <div class="box"><img class="lazy" data-src="images/memes/momentky/sebko_tycinky.jpg" alt="sebko_tycinky.jpg"></div>
+                <div class="box"><img class="lazy" data-src="images/memes/momentky/simon_face.jpg" alt="simon_face.jpg"></div>
+                <div class="box"><img class="lazy" data-src="images/memes/momentky/simon_florbal.jpg" alt="simon_florbal.jpg"></div>
+                <div class="box"><img class="lazy" data-src="images/memes/momentky/stefus_hellno.jpg" alt="stefus_hellno.jpg"></div>
+                <div class="box"><img class="lazy" data-src="images/memes/momentky/stefus_thumbsup.jpg" alt="stefus_thumbsup.jpg"></div>
+                <div class="box"><img class="lazy" data-src="images/memes/momentky/u_kidding.png" alt="u_kidding.png"></div>
+                <div class="box"><img class="lazy" data-src="images/memes/momentky/vilo_face.jpg" alt="vilo_face.jpg"></div>
+                <div class="box"><img class="lazy" data-src="images/memes/momentky/who_dis.jpg" alt="who_dis.jpg"></div>
 			</div>
         </div>	
 	</main>
@@ -149,27 +154,12 @@
 
 
 
-
-
-<script type="text/javascript">
-	// ===== Scroll to Top ==== 
-	$(window).scroll(function() {
-	    if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
-	        $('#return-to-top').fadeIn(200);    // Fade in the arrow
-	    } else {
-	        $('#return-to-top').fadeOut(200);   // Else fade out the arrow
-	    }
-	});
-	$('#return-to-top').click(function() {      // When arrow is clicked
-	    $('body,html').animate({
-	        scrollTop : 0                       // Scroll to top of body
-	    }, 500);
-	});
-</script>
-
 <script src="javascript/menu.js"></script>
 <script src="javascript/verzia.js"></script>
 <script src="javascript/header.js"></script>
+<script src="javascript/backToTop.js"></script>
+<script src="javascript/lazyLoad.js"></script>
+<script src="javascript/login.js"></script>
 
 </body>
 </html>
