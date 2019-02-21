@@ -26,5 +26,5 @@ for (i = 0; i < blok.length; i++)
 // ===== Expand 1st onload ====
 function expandFirst()
 {
-    setTimeout(function(){ blok[0].click() }, 500)
+    setTimeout(function(){ blok[0].click() }, 1000)
 }
