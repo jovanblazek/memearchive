@@ -1,13 +1,13 @@
 #include <stdio.h>
 #include <dirent.h>
 
-#define PRIECINOK "other"
+#define PRIECINOK "momentky"
 
 int main(void)
 {
 	struct dirent *de;
 	
-	FILE *f = fopen("vypis.txt","w");
+	FILE *f = fopen("momentky.txt","w");
 
 	// opendir() returns a pointer of DIR type. 
 	DIR *dr = opendir("../"PRIECINOK);
@@ -20,8 +20,8 @@ int main(void)
 
 	while ((de = readdir(dr)) != NULL)
 	{
-		printf("<div class=\"box\"><img src=\"images/memes/%s/%s\" alt=\"%s\"></div>\n", PRIECINOK, de->d_name, de->d_name);
-		fprintf(f,"<div class=\"box\"><img src=\"images/memes/%s/%s\" alt=\"%s\"></div>\n", PRIECINOK, de->d_name, de->d_name);
+		printf("<div class=\"box\"><img class=\"lazy\" data-src=\"images/memes/%s/%s\" alt=\"%s\"></div>\n", PRIECINOK, de->d_name, de->d_name);
+		fprintf(f,"<div class=\"box\"><img class=\"lazy\" data-src=\"images/memes/%s/%s\" alt=\"%s\"></div>\n", PRIECINOK, de->d_name, de->d_name);
 		/*
 	   	printf("images/memes/%s/%s ", PRIECINOK, de->d_name);
 	    printf("alt=");
