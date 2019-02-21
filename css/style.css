@@ -1025,3 +1025,12 @@ input
 		width: 90%;
 	}
 }
+
+@media screen and (min-width: 1800px) 
+{
+	.index-box-img0,.index-box-img1, .index-box-img2, .index-box-img3, .index-box-img4,
+	.obrazky-box-img1, .obrazky-box-img2, .obrazky-box-img3, .obrazky-box-img4, .obrazky-box-img5
+	{
+		height: 500px;
+	}
+}
