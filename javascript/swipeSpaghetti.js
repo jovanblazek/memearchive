@@ -26,7 +26,7 @@ $(document).ready(function() {
                 e.preventDefault();
         });
         
-        $(".container").swipe({fingers: 'all', allowPageScroll: 'vertical', 
+        $(".container").swipe({fingers: 'all', allowPageScroll: 'vertical', treshold: 145, 
         
         swipe:function(event, direction) 
             {
