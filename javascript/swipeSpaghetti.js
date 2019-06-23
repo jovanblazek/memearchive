@@ -26,9 +26,9 @@ $(document).ready(function() {
                 e.preventDefault();
         });
         
-        $(".container").swipe({
-
-            swipe:function(event, direction) 
+        $(".container").swipe({fingers: 'all', allowPageScroll: 'vertical', 
+        
+        swipe:function(event, direction) 
             {
                 
                 if(direction === "left")
@@ -110,8 +110,6 @@ $(document).ready(function() {
                 
             },
             
-        });
-            
-            
+        }); 
     });
 }); 
